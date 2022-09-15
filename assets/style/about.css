@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+main {
+  padding: 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+main .section-info {
+  max-width: 73%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .section-info .info {
+  flex: 1 1 auto;
+  padding: 30px 100px 0 0;
+}
+main .section-info .info h1 {
+  max-width: 700px;
+  margin: 0 0 0 0;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+main .section-info .info p {
+  max-width: 900px;
+  margin: 20px 0;
+  line-height: 30px;
+}
+main .section-info .info-img {
+  flex: 0 0 450px;
+}
+main .section-info .info-img svg {
+  width: 100%;
+  transition: 0.8s;
+  transform: rotateZ(-15deg) rotateY(25deg);
+  filter: drop-shadow(-10px 10px 0 #580716);
+  -webkit-animation-name: rotateicon;
+          animation-name: rotateicon;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+main .section-info .info-img svg:hover {
+  transition: 2s;
+  fill: #E31D42;
+}
+
+@media (max-width: 1250px) {
+  main .section-info {
+    flex-flow: column-reverse;
+  }
+  main .section-info .info {
+    padding: 50px 0;
+    text-align: center;
+  }
+  main .section-info .info h1 {
+    max-width: 100%;
+  }
+  main .section-info .info-img {
+    width: 150px;
+    flex: 0 0 auto;
+  }
+}
+@media (max-width: 750px) {
+  main .section-info {
+    flex-flow: column-reverse;
+    max-width: 85%;
+  }
+  main .section-info .info {
+    padding: 40px 0;
+    text-align: center;
+  }
+  main .section-info .info h1 {
+    max-width: 100%;
+    font-size: 25px;
+  }
+  main .section-info .info p {
+    font-size: 15px;
+  }
+  main .section-info .info-img {
+    width: 100px;
+    flex: 0 0 auto;
+  }
+}
+@-webkit-keyframes rotateicon {
+  from {
+    transform: rotateZ(-15deg) rotateY(25deg);
+  }
+  to {
+    transform: rotateZ(15deg) rotateY(-25deg);
+    filter: drop-shadow(10px -10px 0 #580716);
+  }
+}
+@keyframes rotateicon {
+  from {
+    transform: rotateZ(-15deg) rotateY(25deg);
+  }
+  to {
+    transform: rotateZ(15deg) rotateY(-25deg);
+    filter: drop-shadow(10px -10px 0 #580716);
+  }
+}
+@-webkit-keyframes lateralslidein {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes lateralslidein {
+  from {
+    margin-left: -100px;
+  }
+  to {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=about.css.map */

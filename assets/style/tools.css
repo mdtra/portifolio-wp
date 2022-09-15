@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+main .section-tools {
+  padding: 80px 0;
+  max-width: 73%;
+  margin: auto;
+  text-align: center;
+}
+main .section-tools h2 {
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+main .section-tools .wrap-tools {
+  visibility: hidden;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section-tools .wrap-tools div {
+  width: 150px;
+  height: 150px;
+  transition: 0.3s;
+}
+main .section-tools .wrap-tools div img {
+  width: 100%;
+  height: 100%;
+}
+main .section-tools .wrap-tools div p {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+main .section-tools .wrap-tools .div-html {
+  width: 120px;
+}
+main .section-tools .wrap-tools .div-css {
+  width: 120px;
+}
+main .section-tools .wrap-tools .div-js {
+  width: 130px;
+}
+main .section-tools .wrap-tools div:hover {
+  transition: 0.3s;
+  margin-top: -30px;
+}
+main .section-tools .tools-down {
+  visibility: visible;
+  -webkit-animation-name: dropin;
+          animation-name: dropin;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@media (max-width: 1250px) {
+  main .section-tools {
+    padding: 0;
+  }
+  main .section-tools .wrap-tools div {
+    width: 80px;
+    -webkit-animation-name: dropin;
+            animation-name: dropin;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  main .section-tools .wrap-tools div p {
+    margin: 0;
+    font-size: 15px;
+  }
+  main .section-tools .wrap-tools .div-html {
+    width: 80px;
+  }
+  main .section-tools .wrap-tools .div-css {
+    width: 80px;
+  }
+  main .section-tools .wrap-tools .div-js {
+    width: 80px;
+  }
+}
+@-webkit-keyframes dropin {
+  from {
+    margin: -50px 0 0 0;
+    opacity: 0;
+  }
+  to {
+    margin: 50px 0 0 0;
+    opacity: 100%;
+  }
+}
+@keyframes dropin {
+  from {
+    margin: -50px 0 0 0;
+    opacity: 0;
+  }
+  to {
+    margin: 50px 0 0 0;
+    opacity: 100%;
+  }
+}/*# sourceMappingURL=tools.css.map */

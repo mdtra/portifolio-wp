@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$color-bg: rgb(19, 18, 18);
+$color-font: #ffffff;
+$color-main: #E31D42;
+$font-main: 'Montserrat', sans-serif;
+
+main {
+    padding: 0 0;
+    font-family: $font-main;
+    font-weight: 300;
+
+    .section-info  {
+        max-width: 73%;
+        margin: 40px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .info {
+            flex: 1 1 auto;
+            padding: 30px 100px 0 0;
+
+            h1 {
+                max-width: 700px;
+                margin: 0 0 0 0;
+                font-size: 40px;
+                font-weight: 300;
+                letter-spacing: 5px;
+            }
+
+            p {
+                max-width: 900px;
+                margin: 20px 0;
+                line-height: 30px;
+            }
+        }
+
+        .info-img {
+            flex: 0 0 450px;
+
+            svg {
+                width: 100%;
+                transition: 0.8s;
+                transform: rotateZ(-15deg) rotateY(25deg);
+                filter: drop-shadow(-10px 10px 0 #580716);
+
+                animation-name: rotateicon;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            svg:hover {
+                transition: 2s;
+                fill:#E31D42;
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+main {
+    .section-info{
+        flex-flow: column-reverse;
+
+        .info {
+            padding: 50px 0;
+            text-align: center;
+
+            h1 {
+                max-width: 100%;
+            }
+        }
+
+        .info-img {
+            width: 150px;
+            flex: 0 0 auto
+        }
+    }
+}
+}
+
+@media (max-width: 750px) {
+main {
+    .section-info{
+        flex-flow: column-reverse;
+        max-width: 85%;
+    
+        .info {
+            padding: 40px 0;
+            text-align: center;
+    
+            h1 {
+                max-width: 100%;
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    
+        .info-img {
+            width: 100px;
+            flex: 0 0 auto
+        }
+    }
+}
+}
+
+@keyframes rotateicon {
+    from {
+        transform: rotateZ(-15deg) rotateY(25deg);
+    }
+
+    to {
+        transform: rotateZ(15deg) rotateY(-25deg);
+        filter: drop-shadow(10px -10px 0 #580716);
+    }
+}
+
+@keyframes lateralslidein {
+    from {
+        margin-left: -100px;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}

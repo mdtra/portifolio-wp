@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(19, 18, 18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .nav-mobile {
+  display: none;
+}
+header .nav-desktop {
+  width: 100%;
+  height: 160px;
+  margin: 0 0;
+  padding: 40px 100px;
+  -webkit-animation-name: slideinmenu;
+          animation-name: slideinmenu;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  background-color: rgb(19, 18, 18);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+header .nav-desktop ul {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 auto;
+  align-items: center;
+  list-style: none;
+}
+header .nav-desktop ul a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 0 1 auto;
+  margin: 0 0 0 0;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+header .nav-desktop ul a li {
+  flex: 0 0 auto;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin: 0 60px 0 0;
+}
+header .nav-desktop ul a .active-test {
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #E31D42;
+  transition: all 0.5s ease-in-out;
+}
+header .nav-desktop ul a li:hover .active-test {
+  width: 100%;
+  transition: 0.5s;
+}
+header .nav-desktop ul a .active-js {
+  width: 100% !important;
+  transition: 0.5s;
+}
+header .nav-desktop ul a .active-js2 {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+header .nav-desktop ul a:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+header .nav-desktop .menu {
+  position: fixed;
+  right: 100px;
+  display: grid;
+  grid-template-areas: "a b" "c d";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  -webkit-animation-name: rotateMenu;
+          animation-name: rotateMenu;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  z-index: 1;
+}
+header .nav-desktop .menu .menu-item {
+  background-color: black;
+  border: 1px solid #E31D42;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .nav-desktop .menu .menu-item img {
+  width: 22px;
+  transform: rotate(-45deg);
+}
+header .nav-desktop .menu .menu-item:hover {
+  transform: scale(1.06);
+  background-color: rgba(227, 29, 65, 0.3843137255);
+  transition: 0.3s;
+}
+header .nav-desktop .menu .include-test {
+  transform: scale(1.06);
+  background-color: rgba(227, 29, 65, 0.3843137255);
+  transition: 0.3s;
+}
+header .nav-desktop .menu .menu-sobre {
+  border-top-left-radius: 100%;
+}
+header .nav-desktop .menu .menu-sobre img {
+  margin: 25px 0 0 25px;
+}
+header .nav-desktop .menu .menu-conhecimentos {
+  border-top-right-radius: 100%;
+}
+header .nav-desktop .menu .menu-conhecimentos img {
+  width: 20px;
+  margin: 25px 0 0 20px;
+}
+header .nav-desktop .menu .menu-projetos {
+  border-bottom-left-radius: 100%;
+}
+header .nav-desktop .menu .menu-projetos img {
+  margin: 20px 0 0 25px;
+}
+header .nav-desktop .menu .menu-contato {
+  border-bottom-right-radius: 100%;
+}
+header .nav-desktop .menu .menu-contato img {
+  width: 20px;
+  margin: 20px 0 0 20px;
+}
+header .nav-desktop .menu .menu-meio {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 32%;
+  border: 2px solid #E31D42;
+  background-color: black;
+  border-radius: 50%;
+}
+header .nav-desktop .menu-down {
+  top: 80%;
+  transition: 0.5s;
+  -webkit-animation-name: slidedowncontrol;
+          animation-name: slidedowncontrol;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+header .nav-desktop .menu-up {
+  top: 40px;
+  transition: 0.5s;
+  -webkit-animation-name: slideupcontrol;
+          animation-name: slideupcontrol;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@media (max-width: 1050px) {
+  header .nav-desktop {
+    margin: 40px 0;
+    -webkit-animation: none;
+            animation: none;
+    justify-content: center;
+  }
+  header .nav-desktop ul a li {
+    margin: 0 20px;
+  }
+  header .nav-desktop .menu {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  header .nav-desktop {
+    display: none;
+  }
+  header .nav-mobile {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 25px 40px;
+  }
+  header .nav-mobile .mobile-logo {
+    width: 25px;
+  }
+  header .nav-mobile .mobile-menu-button {
+    width: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  header .nav-mobile .mobile-menu-dropdown {
+    display: none;
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    padding: 0 25px;
+    border: 1px solid #E31D42;
+    border-radius: 8px;
+    background-color: rgb(19, 18, 18);
+    -webkit-animation-name: slideindrop;
+            animation-name: slideindrop;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
+    z-index: 1;
+  }
+  header .nav-mobile .mobile-menu-dropdown ul {
+    list-style: none;
+  }
+  header .nav-mobile .mobile-menu-dropdown ul a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  header .nav-mobile .mobile-menu-dropdown ul a li {
+    margin: 20px 0;
+  }
+  .overlay {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+}
+@-webkit-keyframes rotateMenu {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@keyframes rotateMenu {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes slideinmenu {
+  from {
+    margin-top: -60px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@keyframes slideinmenu {
+  from {
+    margin-top: -60px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideinmenutablet {
+  from {
+    margin-top: -60px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 60px;
+    opacity: 1;
+  }
+}
+@keyframes slideinmenutablet {
+  from {
+    margin-top: -60px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 60px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideindrop {
+  from {
+    margin-top: -60px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0x;
+    opacity: 1;
+  }
+}
+@keyframes slideindrop {
+  from {
+    margin-top: -60px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0x;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slidedowncontrol {
+  from {
+    top: 40px;
+  }
+  to {
+    top: 80%;
+  }
+}
+@keyframes slidedowncontrol {
+  from {
+    top: 40px;
+  }
+  to {
+    top: 80%;
+  }
+}
+@-webkit-keyframes slideupcontrol {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 40px;
+  }
+}
+@keyframes slideupcontrol {
+  from {
+    top: 80%;
+  }
+  to {
+    top: 40px;
+  }
+}/*# sourceMappingURL=header.css.map */
