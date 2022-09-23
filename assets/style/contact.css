@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+main .section-contato {
+  width: 76%;
+  margin: 110px auto;
+  display: flex;
+}
+main .section-contato .contato-info {
+  width: 50%;
+  padding: 0 10%;
+  visibility: hidden;
+}
+main .section-contato .contato-info h2 {
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0 0 50px 0;
+}
+main .section-contato .contato-info p {
+  margin: 0 0 15px 0;
+  line-height: 25px;
+}
+main .section-contato .contato-info div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 50px 0 20px 0;
+}
+main .section-contato .contato-info div a:first-child {
+  color: #ffffff;
+  background-color: #004182;
+  margin: 0 15px 0 0;
+}
+main .section-contato .contato-info div a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  width: 150px;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 30px;
+  transition: 0.3s;
+  margin: 0 0 0 15px;
+}
+main .section-contato .contato-info div a img {
+  width: 25px;
+  height: 25px;
+}
+main .section-contato .contato-info div a:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+main .section-contato .contato-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  width: 330px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #24CA62;
+  padding: 8px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+main .section-contato .contato-info a img {
+  margin: 0 10px 0 0;
+  width: 25px;
+  height: 25px;
+}
+main .section-contato .contato-info a:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+main .section-contato .contato-form {
+  width: 50%;
+  padding: 0 50px;
+  visibility: hidden;
+}
+main .section-contato .contato-form form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border: 1px solid #E31D42;
+  border-radius: 8px;
+  box-shadow: 0 8px 0 rgb(0, 0, 0);
+}
+main .section-contato .contato-form form .alerta-envio {
+  display: none;
+  color: #ffffff;
+  text-align: center;
+}
+main .section-contato .contato-form form input, main .section-contato .contato-form form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  background-color: rgb(41, 39, 39);
+  margin: 10px 0;
+  padding: 0 0 0 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+main .section-contato .contato-form form textarea {
+  resize: none;
+  padding: 15px;
+}
+main .section-contato .contato-form form input:focus, main .section-contato .contato-form form textarea:focus {
+  outline: none;
+  border: 1px solid #E31D42;
+}
+main .section-contato .contato-form form input::-moz-placeholder, main .section-contato .contato-form form textarea::-moz-placeholder {
+  text-indent: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(119, 111, 111, 0.993);
+}
+main .section-contato .contato-form form input:-ms-input-placeholder, main .section-contato .contato-form form textarea:-ms-input-placeholder {
+  text-indent: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(119, 111, 111, 0.993);
+}
+main .section-contato .contato-form form input::placeholder, main .section-contato .contato-form form textarea::placeholder {
+  text-indent: 0;
+  font-family: "Montserrat", sans-serif;
+  color: rgba(119, 111, 111, 0.993);
+}
+main .section-contato .contato-form form #msg {
+  height: 80px;
+  border-radius: 15px;
+}
+main .section-contato .contato-form form button {
+  background-color: #E31D42;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin: 15px 0 0 0;
+  box-shadow: 0 8px 0 #ac1631;
+}
+main .section-contato .contato-form form button:hover {
+  background-color: #e44a66;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 8px 0 #a73046;
+}
+main .section-contato .contato-form form button:disabled {
+  background-color: #c0c0c0;
+  cursor: auto;
+  box-shadow: 0 8px 0 #6b6b6b;
+}
+main .section-contato .contato-form form .alerta-erro {
+  display: none;
+  margin: 20px 0 0 0;
+  color: rgb(243, 54, 54);
+  text-align: center;
+}
+main .section-contato .ativa-info {
+  visibility: visible;
+  -webkit-animation-name: info;
+          animation-name: info;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+main .section-contato .ativa-form {
+  visibility: visible;
+  -webkit-animation-name: form;
+          animation-name: form;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes info {
+  from {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes info {
+  from {
+    transform: translateX(-180px);
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes form {
+  from {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+@keyframes form {
+  from {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  to {
+    margin: 0 0 0 0;
+    opacity: 1;
+  }
+}
+@media (max-width: 1250px) {
+  main .section-contato {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px 0 0 0;
+  }
+  main .section-contato .contato-info {
+    text-align: center;
+    margin: 0 0 70px 0;
+    width: 100%;
+  }
+  main .section-contato .contato-info div {
+    justify-content: center;
+  }
+  main .section-contato .contato-info a {
+    width: 52%;
+    margin: auto;
+  }
+  main .section-contato .contato-form {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  main .section-contato {
+    padding: 0;
+  }
+  main .section-contato .contato-info h2 {
+    font-size: 30px;
+  }
+  main .section-contato .contato-form {
+    padding: 0;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -37,8 +37,8 @@ main .section-info .info-img svg {
   filter: drop-shadow(-10px 10px 0 #580716);
   -webkit-animation-name: rotateicon;
           animation-name: rotateicon;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;

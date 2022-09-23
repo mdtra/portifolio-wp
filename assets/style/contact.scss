@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$color-bg: rgb(19, 18, 18);
+$color-font: #ffffff;
+$color-main: #E31D42;
+$font-main: 'Montserrat', sans-serif;
+
+main {
+    .section-contato {
+        width: 76%;
+        margin: 110px auto;
+
+        display: flex;
+
+        .contato-info {
+            width: 50%;
+            padding: 0 10%; 
+            visibility: hidden;
+
+
+            h2 {
+                font-size: 40px;
+                font-weight: 100;
+                margin: 0 0 50px 0;
+            }
+
+            p {
+                margin: 0 0 15px 0;
+                line-height: 25px;
+
+            }
+
+            div {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                margin: 50px 0 20px 0;
+
+                a:first-child {
+                    color: #ffffff;
+                    background-color: #004182;
+    
+                    margin: 0 15px 0 0;
+                }
+                
+                a {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-weight: 700;
+    
+                    width: 150px;
+                    color: #000000;
+                    text-decoration: none;
+                    background-color: #ffffff;
+    
+                    padding: 8px;
+                    border-radius: 30px;
+    
+                    transition: 0.3s;
+
+                    margin: 0 0 0 15px;
+
+                    img {
+    
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+                a:hover {
+                    transform: scale(1.05);
+                    transition: 0.3s;
+                }
+            }
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+
+                width: 330px;
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #24CA62;
+
+                padding: 8px;
+                border-radius: 30px;
+
+                transition: 0.3s;
+
+
+                img {
+
+                    margin: 0 10px 0 0;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+
+            a:hover {
+                transform: scale(1.05);
+                transition: 0.3s;
+            }
+        }
+
+        .contato-form {
+            width: 50%;
+            padding: 0 50px;
+
+            visibility: hidden;
+
+
+            form{
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+                border:1px solid #E31D42;
+                border-radius: 8px;
+                box-shadow: 0 8px 0 rgb(0, 0, 0);
+
+                .alerta-envio {
+                    display: none;
+                    color: #ffffff;
+                    text-align: center;
+                }
+
+                input, textarea{
+                    width: 100%;
+                    border: none;
+                    border-radius: 15px;
+
+                    height: 40px ;
+                    background-color: rgb(41, 39, 39);
+
+                    margin: 10px 0;
+                    padding: 0 0 0 20px;
+
+                    font-family: $font-main;
+                    color: #ffffff;
+                    
+                }
+
+                textarea {
+                    resize: none;
+                    padding: 15px;
+                }
+
+                input:focus, textarea:focus {
+                    outline: none;
+                    border: 1px solid $color-main;
+                }
+
+                input::placeholder, textarea::placeholder {
+                    text-indent: 0;
+                    font-family: $font-main;
+                    color: rgba(119, 111, 111, 0.993);
+                }
+
+                #msg {
+                    height: 80px;
+                    border-radius: 15px;
+                }
+
+                button {
+                    background-color: #E31D42;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    font-family: $font-main;
+                    font-size: 18px;
+                    margin: 15px 0 0 0;
+                    box-shadow: 0 8px 0 #ac1631;
+                }
+
+                button:hover {
+                    background-color: #e44a66;
+                    transition: 0.3s;
+                    cursor: pointer;
+                    box-shadow: 0 8px 0 #a73046;
+                }
+
+                button:disabled {
+                    background-color: #c0c0c0;
+                    cursor:auto;
+                    box-shadow: 0 8px 0 #6b6b6b;
+                }
+
+                .alerta-erro {
+                    display: none;
+                    margin: 20px 0 0 0;
+                    color: rgb(243, 54, 54);
+                    text-align: center;
+                }
+
+            }
+        }
+
+        .ativa-info {
+            visibility: visible;
+            animation-name: info;
+            animation-duration: 3s;
+        }
+
+        .ativa-form {
+            visibility: visible;
+            animation-name: form;
+            animation-duration: 3s;
+        }
+    }
+}
+
+@keyframes info {
+    from {
+        transform: translateX(-180px);
+        opacity: 0;
+    }
+
+    to {
+        margin: 0 0 0 0;
+        opacity: 1;
+    }
+}
+
+@keyframes form {
+    from {
+        transform: translateX(180px);
+        opacity: 0;
+    }
+
+    to {
+        margin: 0 0 0 0;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1250px) {
+    main {
+        .section-contato{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px 0 0 0;
+
+            .contato-info {
+                text-align: center;
+                margin: 0 0 70px 0;
+                width: 100%;
+
+                div {
+                    justify-content: center;
+                }
+
+                a {
+                    width: 52%;
+                    margin: auto;
+                }
+            }
+
+            .contato-form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    main {
+        .section-contato{
+            padding: 0;
+
+            .contato-info {
+
+                h2 {
+                    font-size: 30px;
+                }
+            }
+
+            .contato-form {
+                padding: 0;
+            }
+        }
+    }
+}

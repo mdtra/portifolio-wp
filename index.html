@@ -18,25 +18,25 @@
                 <a href="#tools">
                     <li class="link-conhecimentos"><div class="active-test"></div>Conhecimentos</li>
                 </a>
-                <a href="">
-                    <li class="link-contato"><div class="active-test"></div>Contato</li>
-                </a>
-                <a href="">
+                <a href="#projetos">
                     <li class="link-projetos"><div class="active-test"></div>Trabalhos recentes</li>
+                </a>
+                <a href="#contato">
+                    <li class="link-contato"><div class="active-test"></div>Contato</li>
                 </a>
             </ul>
             <div class="menu">
-                <a href="#sobremim" class="menu-item menu-sobre link-sobre">
+                <a href="#sobremim" class="menu-item menu-sobre link-sobre" title="Sobre mim">
                     <img src="assets/images/address-book-regular.svg" alt="icone menu sobre">
                 </a>
-                <a href="#tools" class="menu-item menu-conhecimentos link-conhecimentos">
+                <a href="#tools" class="menu-item menu-conhecimentos link-conhecimentos" title="Conhecimentos">
                     <img src="assets/images/wrench-solid.svg" alt="icone menu conhecimentos">
                 </a>
-                <a class="menu-item menu-projetos link-projetos">
-                    <img src="assets/images/code-solid.svg" alt="icone menu projetos">
+                <a href="#projetos" class="menu-item menu-projetos link-projetos">
+                    <img src="assets/images/code-solid.svg" alt="icone menu projetos" title="Trabalhos recentes">
                 </a>
-                <a class="menu-item menu-contato link-contato">
-                    <img src="assets/images/phone-solid.svg" alt="icone menu contato">
+                <a href="#contato" class="menu-item menu-contato link-contato">
+                    <img src="assets/images/phone-solid.svg" alt="icone menu contato" title="Contato">
                 </a>
                 <div class="menu-meio">
 
@@ -58,10 +58,10 @@
                     <a href="#tools">
                         <li class="link-conhecimentos-mobile">Conhecimentos</li>
                     </a>
-                    <a href="">
+                    <a href="#contato">
                         <li class="link-contato-mobile">Contato</li>
                     </a>
-                    <a href="">
+                    <a href="#projetos">
                         <li class="link-projetos-mobile">Trabalhos recentes</li>
                     </a>
                 </ul>
@@ -86,9 +86,9 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M418.4 157.9c35.3-8.3 61.6-40 61.6-77.9c0-44.2-35.8-80-80-80c-43.4 0-78.7 34.5-80 77.5L136.2 151.1C121.7 136.8 101.9 128 80 128c-44.2 0-80 35.8-80 80s35.8 80 80 80c12.2 0 23.8-2.7 34.1-7.6L259.7 407.8c-2.4 7.6-3.7 15.8-3.7 24.2c0 44.2 35.8 80 80 80s80-35.8 80-80c0-27.7-14-52.1-35.4-66.4l37.8-207.7zM156.3 232.2c2.2-6.9 3.5-14.2 3.7-21.7l183.8-73.5c3.6 3.5 7.4 6.7 11.6 9.5L317.6 354.1c-5.5 1.3-10.8 3.1-15.8 5.5L156.3 232.2z" /></svg>
             </div>
         </section>
-        <section class="section-tools">
+        <section class="section-tools" id="tools">
             <h2>My Tech <strong>Stack</strong></h2>
-            <div class="wrap-tools" id="tools">
+            <div class="wrap-tools">
                 <div class="div-html">
                     <img src="assets/images/html5.svg" alt="">
                     <p>HTML</p>
@@ -111,7 +111,116 @@
                 </div>
             </div>
         </section>
+        <section class="section-projetos" id="projetos">
+            <h2><strong>Trabalhos</strong> Recentes</h2>
+            <div class="galeria">
+                <div class="projeto-1 proj">
+                    <img src="assets/images/projeto-1.JPG" alt="">
+                    <div class="fig-bg"></div>
+                    <p>Componente de Precificação</p>
+                    <div class="clickable"></div>
+                </div>
+                <div class="projeto-2 proj">
+                    <img src="assets/images/projeto-2.JPG" alt="">
+                    <div class="fig-bg"></div>
+                    <p>Componente de Avaliação</p>
+                    <div class="clickable"></div>
+                </div>
+                <div class="projeto-3 proj">
+                    <img src="assets/images/comingsoon.jpg" alt="">
+                    <div class="fig-bg"></div>
+                    <p>Em breve</p>
+                    <div class="clickable"></div>
+                </div>
+                <div class="projeto-4 proj">
+                    <img src="assets/images/comingsoon.jpg" alt="">
+                    <div class="fig-bg"></div>
+                    <p>Em breve</p>
+                    <div class="clickable"></div>
+                </div>
+                
+            </div>
+            <div class="galeria-info">
+                <div class="div-projeto-1">
+
+                    <h3>Componente de Precificação</h3>
+
+                    <p>Componente de precificação baseado em planos mensais e anuais. Foi utilizado um input do tipo range para selecionar os valores possiveis para cada opção de plano. Ao alterar a forma de pagamento para anual, os valores são atualizados com 25% de desconto. </p>
+
+                    <ul>
+                        <p>Tecnologias utilizadas:</p>
+                        <li>HTML</li>
+                        <li>SCSS</li>
+                        <li>Javascript</li>
+                        <li>Git</li>
+                    </ul>
+
+                    <div class="links-wrap">
+                        <a href="https://github.com/mdtra/princing-component" target="_blank"><img src="assets/images/github.svg" alt=""> Código fonte</a>
+                        <a href="https://princing-component-kappa.vercel.app/" target="_blank"><img src="assets/images/globe-solid (1).svg" alt=""> Projeto no ar</a>
+                    </div>
+
+                </div>
+                <div class="div-projeto-2">
+
+                    <h3>Componente de Avaliação</h3>
+
+                    <p>Componente para avaliação com opções de notas de 1 a 5. </p>
+
+                    <ul>
+                        <p>Tecnologias utilizadas:</p>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Git</li>
+                    </ul>
+
+                    <div class="links-wrap">
+                        <a href="https://github.com/mdtra/interactive-rating-component" target="_blank"><img src="assets/images/github.svg" alt=""> Código fonte</a>
+                        <a href="https://interactive-rating-component-puce-seven.vercel.app/" target="_blank"><img src="assets/images/globe-solid (1).svg" alt=""> Projeto no ar</a>
+                    </div>
+
+                </div>
+                <div class="div-projeto-3">
+
+                    <h3>Novo projeto em breve</h3>
+
+
+                </div>
+                <div class="div-projeto-4">
+
+                    <h3>Novo projeto em breve</h3>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-contato" id="contato">
+            <div class="contato-info">
+                <h2>Meus <strong>Contatos</strong></h2>
+                <p><strong>Email: </strong> <br>matheus_dutra_96@hotmail.com</p>
+                <p><strong>Celular: </strong> <br>(19)99351-0669</p>
+                <div>
+                    <a href="https://www.linkedin.com/in/matheus-dutra-9a8043b0/" target="_blank"><img src="assets/images/linkedin.svg">Linkedin</a>
+                    <a href="https://github.com/mdtra" target="_blank"><img src="assets/images/github copy.svg">Github</a>
+                </div>
+                <a href="https://github.com/mdtra" target="_blank"><img src="assets/images/whatsapp.svg">Whatsapp</a>
+            </div>
+            <div class="contato-form">
+                <form>
+                    <span class="alerta-envio">Mensagem enviada</span>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <input type="text" name="celular" id="celular" placeholder="Fone">
+                    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+                    <button type="button" class="button-form" disabled>Enviar</button>
+                    <span class="alerta-erro">Insira um email valido</span>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>2022&copy - Desenvolvido por Matheus Dutra</p>
+    </footer>
     <div class="overlay">
 
     </div>

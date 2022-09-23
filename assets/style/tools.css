@@ -12,7 +12,7 @@ main .section-tools h2 {
 }
 main .section-tools .wrap-tools {
   visibility: hidden;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,10 +32,7 @@ main .section-tools .wrap-tools div p {
   letter-spacing: 2px;
   margin: 10px 0;
 }
-main .section-tools .wrap-tools .div-html {
-  width: 120px;
-}
-main .section-tools .wrap-tools .div-css {
+main .section-tools .wrap-tools .div-html .div-css {
   width: 120px;
 }
 main .section-tools .wrap-tools .div-js {
@@ -68,14 +65,39 @@ main .section-tools .tools-down {
     margin: 0;
     font-size: 15px;
   }
-  main .section-tools .wrap-tools .div-html {
-    width: 80px;
-  }
-  main .section-tools .wrap-tools .div-css {
+  main .section-tools .wrap-tools .div-html .div-css {
     width: 80px;
   }
   main .section-tools .wrap-tools .div-js {
     width: 80px;
+  }
+}
+@media (max-width: 750px) {
+  main .section-tools .wrap-tools {
+    display: grid;
+    grid-template-areas: "a b c" "d e f";
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    -webkit-animation: none;
+            animation: none;
+  }
+  main .section-tools .wrap-tools div {
+    margin-top: 50px;
+    width: 70%;
+    height: 80px;
+  }
+  main .section-tools .wrap-tools div img {
+    margin: 0;
+  }
+  main .section-tools .wrap-tools div:hover {
+    margin-top: 50px;
+  }
+  main .section-tools .wrap-tools .div-js {
+    width: 70%;
+  }
+  main .section-tools h2 {
+    font-size: 26px;
+    margin-bottom: -50px;
   }
 }
 @-webkit-keyframes dropin {
