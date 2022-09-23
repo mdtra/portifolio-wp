@@ -84,7 +84,7 @@ main .section-contato .contato-form form {
   padding: 40px;
   border: 1px solid #E31D42;
   border-radius: 8px;
-  box-shadow: 0 8px 0 rgb(0, 0, 0);
+  box-shadow: 0 8px 0 #851126;
 }
 main .section-contato .contato-form form .alerta-envio {
   display: none;

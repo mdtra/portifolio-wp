@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;500;600&display=swap");
 main .section-projetos {
   width: 76%;
   margin: 110px auto;
@@ -25,7 +26,7 @@ main .section-projetos .galeria .proj {
   width: 90%;
   height: 200px;
   padding: 0px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px solid #E31D42;
   background-color: rgb(19, 18, 18);
   overflow: hidden;
@@ -37,6 +38,15 @@ main .section-projetos .galeria .proj {
 main .section-projetos .galeria .proj img {
   width: 100%;
   height: 100%;
+}
+main .section-projetos .galeria .proj span {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 25% auto;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 main .section-projetos .galeria .proj .fig-bg {
   position: absolute;
@@ -56,6 +66,10 @@ main .section-projetos .galeria .proj .fig-bg {
   align-items: center;
 }
 main .section-projetos .galeria .proj p {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
   position: absolute;
   bottom: 0;
   transform: rotate(0deg);
@@ -75,10 +89,6 @@ main .section-projetos .galeria .proj .clickable {
   width: 100%;
   height: 100%;
 }
-main .section-projetos .galeria .projeto-sel {
-  outline: 3px solid #E31D42;
-  font-weight: 700;
-}
 main .section-projetos .galeria .clickable-active {
   background-color: rgba(227, 29, 65, 0.3843137255) !important;
 }
@@ -91,9 +101,15 @@ main .section-projetos .galeria-info {
   padding: 30px 60px;
   visibility: hidden;
 }
+main .section-projetos .galeria-info div {
+  -webkit-animation-name: galeriainfo;
+          animation-name: galeriainfo;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
 main .section-projetos .galeria-info div h3 {
   font-size: 23px;
-  font-weight: 300;
+  font-weight: 700;
   font-style: italic;
   margin: 0 0 15px 0;
 }
@@ -120,6 +136,7 @@ main .section-projetos .galeria-info div .links-wrap a {
   width: 180px;
   justify-content: space-around;
   transition: 0.3s;
+  box-shadow: 0 5px 0 #851126;
 }
 main .section-projetos .galeria-info div .links-wrap a img {
   width: 20px;

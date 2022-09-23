@@ -13,3 +13,46 @@ footer {
 
     
 }
+
+.whats-sticky {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+
+    width: 80px;
+    height: 80px;
+    background-color: #24CA62;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    animation-name: stickyin;
+    animation-duration: 2s;
+
+    transition: 0.3s;
+
+    img {
+        width: 80%;
+    }
+}
+
+.whats-sticky:hover {
+    transform: scale(1.04);
+    transition: 0.3s;
+}
+
+@keyframes stickyin {
+    from {
+        transform: translateX(-80px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
