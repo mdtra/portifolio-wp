@@ -1,3 +1,4 @@
+const info = document.querySelector('.section-info')
 const tools = document.querySelector('.wrap-tools')
 const projImg = document.querySelector('.galeria')
 const projInfo = document.querySelector('.galeria-info')
@@ -23,11 +24,17 @@ let controlProj = false
 
 document.addEventListener('scroll', () => {
     let fimTela = window.innerHeight
+    let infoCord = info.getBoundingClientRect()
     let toolCord = tools.getBoundingClientRect()
     let projCord = projImg.getBoundingClientRect()
     let contatoCord = contatoInfo.getBoundingClientRect()
 
     if(document.body.clientWidth > 750) {
+
+        if(infoCord.bottom <= fimTela + 50) {
+            info.classList.add('info-down')
+        }
+
         if(toolCord.bottom <= fimTela + 50) {
             tools.classList.add('tools-down')
         }

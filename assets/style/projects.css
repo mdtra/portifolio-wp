@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;500;600&display=swap");
+main .wrap-projetos {
+  background-color: rgba(0, 0, 0, 0.308);
+  padding: 60px 0;
+}
 main .section-projetos {
   width: 76%;
-  margin: 110px auto;
+  margin: auto;
   display: grid;
   grid-template-areas: "a a" "b c";
   grid-template-columns: 50% 50%;

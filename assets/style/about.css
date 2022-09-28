@@ -4,18 +4,23 @@ main {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
 }
+main .wrap-info {
+  background-color: rgba(0, 0, 0, 0.308);
+  padding: 60px 0;
+}
 main .section-info {
   max-width: 73%;
-  margin: 40px auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 main .section-info .info {
   flex: 1 1 auto;
-  padding: 30px 100px 0 0;
+  padding: 30px 0 0 200px;
 }
-main .section-info .info h1 {
+main .section-info .info h2 {
   max-width: 700px;
   margin: 0 0 0 0;
   font-size: 40px;
@@ -28,17 +33,17 @@ main .section-info .info p {
   line-height: 30px;
 }
 main .section-info .info-img {
-  flex: 0 0 450px;
+  flex: 0 0 250px;
 }
 main .section-info .info-img svg {
   width: 100%;
   transition: 0.8s;
   transform: rotateZ(-15deg) rotateY(25deg);
-  filter: drop-shadow(-10px 10px 0 #E31D42);
-  -webkit-animation-name: rotateicon;
-          animation-name: rotateicon;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  filter: drop-shadow(0 0 3px #E31D42);
+  -webkit-animation-name: updownicon;
+          animation-name: updownicon;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -46,11 +51,21 @@ main .section-info .info-img svg {
 }
 main .section-info .info-img svg:hover {
   transition: 2s;
-  fill: #E31D42;
-  filter: drop-shadow(-10px 10px 0 #7e1024);
+  filter: drop-shadow(0 0 20px #7e1024);
+}
+main .info-down {
+  visibility: visible;
+  -webkit-animation-name: horizontalslidein;
+          animation-name: horizontalslidein;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 @media (max-width: 1250px) {
+  main .wrap-info {
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 0;
+  }
   main .section-info {
     flex-flow: column-reverse;
   }
@@ -62,11 +77,14 @@ main .section-info .info-img svg:hover {
     max-width: 100%;
   }
   main .section-info .info-img {
-    width: 150px;
-    flex: 0 0 auto;
+    display: none;
   }
 }
 @media (max-width: 750px) {
+  main .wrap-info {
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 0;
+  }
   main .section-info {
     flex-flow: column-reverse;
     max-width: 85%;
@@ -83,41 +101,42 @@ main .section-info .info-img svg:hover {
     font-size: 15px;
   }
   main .section-info .info-img {
-    width: 100px;
-    flex: 0 0 auto;
+    display: none;
   }
 }
-@-webkit-keyframes rotateicon {
+@-webkit-keyframes updownicon {
   from {
-    transform: rotateZ(-15deg) rotateY(25deg);
+    transform: translateY(0px);
   }
   to {
-    transform: rotateZ(15deg) rotateY(-25deg);
-    filter: drop-shadow(10px -10px 0 #7e1024);
+    transform: translateY(-30px);
   }
 }
-@keyframes rotateicon {
+@keyframes updownicon {
   from {
-    transform: rotateZ(-15deg) rotateY(25deg);
+    transform: translateY(0px);
   }
   to {
-    transform: rotateZ(15deg) rotateY(-25deg);
-    filter: drop-shadow(10px -10px 0 #7e1024);
+    transform: translateY(-30px);
   }
 }
-@-webkit-keyframes lateralslidein {
+@-webkit-keyframes horizontalslidein {
   from {
-    margin-left: -100px;
+    margin-top: -100px;
+    opacity: 0;
   }
   to {
-    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
   }
 }
-@keyframes lateralslidein {
+@keyframes horizontalslidein {
   from {
-    margin-left: -100px;
+    margin-top: -100px;
+    opacity: 0;
   }
   to {
-    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
   }
 }/*# sourceMappingURL=about.css.map */
