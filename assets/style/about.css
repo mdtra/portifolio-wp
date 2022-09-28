@@ -34,7 +34,7 @@ main .section-info .info-img svg {
   width: 100%;
   transition: 0.8s;
   transform: rotateZ(-15deg) rotateY(25deg);
-  filter: drop-shadow(-10px 10px 0 #580716);
+  filter: drop-shadow(-10px 10px 0 #E31D42);
   -webkit-animation-name: rotateicon;
           animation-name: rotateicon;
   -webkit-animation-duration: 8s;
@@ -47,6 +47,7 @@ main .section-info .info-img svg {
 main .section-info .info-img svg:hover {
   transition: 2s;
   fill: #E31D42;
+  filter: drop-shadow(-10px 10px 0 #7e1024);
 }
 
 @media (max-width: 1250px) {
@@ -92,7 +93,7 @@ main .section-info .info-img svg:hover {
   }
   to {
     transform: rotateZ(15deg) rotateY(-25deg);
-    filter: drop-shadow(10px -10px 0 #580716);
+    filter: drop-shadow(10px -10px 0 #7e1024);
   }
 }
 @keyframes rotateicon {
@@ -101,7 +102,7 @@ main .section-info .info-img svg:hover {
   }
   to {
     transform: rotateZ(15deg) rotateY(-25deg);
-    filter: drop-shadow(10px -10px 0 #580716);
+    filter: drop-shadow(10px -10px 0 #7e1024);
   }
 }
 @-webkit-keyframes lateralslidein {

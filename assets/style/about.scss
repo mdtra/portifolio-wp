@@ -43,7 +43,7 @@ main {
                 width: 100%;
                 transition: 0.8s;
                 transform: rotateZ(-15deg) rotateY(25deg);
-                filter: drop-shadow(-10px 10px 0 #580716);
+                filter: drop-shadow(-10px 10px 0 #E31D42);
 
                 animation-name: rotateicon;
                 animation-duration: 8s;
@@ -54,6 +54,7 @@ main {
             svg:hover {
                 transition: 2s;
                 fill:#E31D42;
+                filter: drop-shadow(-10px 10px 0 #7e1024);
             }
         }
     }
@@ -116,7 +117,7 @@ main {
 
     to {
         transform: rotateZ(15deg) rotateY(-25deg);
-        filter: drop-shadow(10px -10px 0 #580716);
+        filter: drop-shadow(10px -10px 0 #7e1024);
     }
 }
 
