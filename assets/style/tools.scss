@@ -7,7 +7,7 @@ $font-main: 'Montserrat', sans-serif;
 
 main {
     .section-tools{
-        padding: 50px 0 70px 0;
+        padding: 50px 0 140px 0;
         max-width: 73%;
         margin: auto;
         text-align: center;
@@ -21,7 +21,7 @@ main {
 
         .wrap-tools {
             visibility: hidden;
-            margin: 50px 0 50px 0;
+            margin: 50px 0 0 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,9 +69,11 @@ main {
 @media (max-width: 1250px) {
     main {
         .section-tools {
-            padding: 40px 0;
+            padding: 40px 0 80px 0;
 
             .wrap-tools {
+                margin: 20px 0 0 0;
+
                 div {
                     width: 80px;
                     animation-name: dropin;
@@ -100,6 +102,7 @@ main {
     .section-tools {
 
         .wrap-tools {
+            margin: 50px 0 0 0;
             display: grid;
             grid-template-areas: 
             "a b c"

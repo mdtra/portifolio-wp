@@ -21,20 +21,47 @@ main {
 
         .title {
             flex: 1 1 auto;
-            padding: 30px 100px 0 0;
+            padding: 0 100px 0 0;
 
             h1 {
                 max-width: 700px;
-                margin: 0 0 0 0;
+                margin: 0 0 40px 0;
                 font-size: 40px;
                 font-weight: 300;
                 letter-spacing: 5px;
             }
 
-            p {
-                max-width: 900px;
-                margin: 20px 0;
-                line-height: 30px;
+            h1:after {
+                content: "";
+                margin: 0 0 0 10px;
+                border-right: 2px solid #E31D42;
+
+                animation-name: blinkdot;
+                animation-duration: 0.5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                
+            }
+
+            a {
+                background-color: #e31d4100;
+                color: #ffffff;
+                font-family: $font-main;
+                font-size: 20px;
+                border: 1px solid #E31D42;
+                box-shadow: 0 8px 0 #7a1024;
+
+                padding: 10px 50px;
+                cursor: pointer;
+                transition: 1s;
+
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: #E31D42;
+                transition: 1s;
+                padding: 10px 80px;
             }
         }
 
@@ -48,7 +75,7 @@ main {
                 filter: drop-shadow(-10px 10px 0 #E31D42);
 
                 animation-name: rotateicon;
-                animation-duration: 8s;
+                animation-duration: 5s;
                 animation-iteration-count: infinite;
                 animation-direction: alternate;
             }
@@ -82,9 +109,10 @@ main {
             }
         }
     }
-    }
+}
+
     
-    @media (max-width: 750px) {
+@media (max-width: 750px) {
     main {
         .section-home{
             flex-flow: column-reverse;
@@ -110,9 +138,9 @@ main {
             }
         }
     }
-    }
-    
-    @keyframes rotateicon {
+}    
+
+@keyframes rotateicon {
         from {
             transform: rotateZ(-15deg) rotateY(25deg);
         }
@@ -121,9 +149,9 @@ main {
             transform: rotateZ(15deg) rotateY(-25deg);
             filter: drop-shadow(10px -10px 0 #7e1024);
         }
-    }
-    
-    @keyframes lateralslidein {
+}
+
+@keyframes lateralslidein {
         from {
             margin-left: -100px;
         }
@@ -131,4 +159,14 @@ main {
         to {
             margin-left: 0;
         }
-    }
+}
+
+@keyframes blinkdot {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+}

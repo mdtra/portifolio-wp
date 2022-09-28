@@ -14,19 +14,44 @@ main .section-home {
 }
 main .section-home .title {
   flex: 1 1 auto;
-  padding: 30px 100px 0 0;
+  padding: 0 100px 0 0;
 }
 main .section-home .title h1 {
   max-width: 700px;
-  margin: 0 0 0 0;
+  margin: 0 0 40px 0;
   font-size: 40px;
   font-weight: 300;
   letter-spacing: 5px;
 }
-main .section-home .title p {
-  max-width: 900px;
-  margin: 20px 0;
-  line-height: 30px;
+main .section-home .title h1:after {
+  content: "";
+  margin: 0 0 0 10px;
+  border-right: 2px solid #E31D42;
+  -webkit-animation-name: blinkdot;
+          animation-name: blinkdot;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+main .section-home .title a {
+  background-color: rgba(227, 29, 65, 0);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  border: 1px solid #E31D42;
+  box-shadow: 0 8px 0 #7a1024;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: 1s;
+  text-decoration: none;
+}
+main .section-home .title a:hover {
+  background-color: #E31D42;
+  transition: 1s;
+  padding: 10px 80px;
 }
 main .section-home .info-img {
   flex: 0 0 450px;
@@ -38,8 +63,8 @@ main .section-home .info-img svg {
   filter: drop-shadow(-10px 10px 0 #E31D42);
   -webkit-animation-name: rotateicon;
           animation-name: rotateicon;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -120,5 +145,21 @@ main .section-home .info-img svg:hover {
   }
   to {
     margin-left: 0;
+  }
+}
+@-webkit-keyframes blinkdot {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blinkdot {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=destaque.css.map */

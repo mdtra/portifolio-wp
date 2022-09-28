@@ -18,7 +18,7 @@ main .section-info {
 }
 main .section-info .info {
   flex: 1 1 auto;
-  padding: 30px 0 0 200px;
+  padding: 0 0 0 200px;
 }
 main .section-info .info h2 {
   max-width: 700px;
@@ -33,13 +33,13 @@ main .section-info .info p {
   line-height: 30px;
 }
 main .section-info .info-img {
-  flex: 0 0 250px;
+  flex: 0 0 300px;
 }
 main .section-info .info-img svg {
   width: 100%;
   transition: 0.8s;
   transform: rotateZ(-15deg) rotateY(25deg);
-  filter: drop-shadow(0 0 3px #E31D42);
+  filter: drop-shadow(0 10px 2px #7e1024);
   -webkit-animation-name: updownicon;
           animation-name: updownicon;
   -webkit-animation-duration: 1s;
@@ -50,8 +50,8 @@ main .section-info .info-img svg {
           animation-direction: alternate;
 }
 main .section-info .info-img svg:hover {
-  transition: 2s;
-  filter: drop-shadow(0 0 20px #7e1024);
+  transition: 1s;
+  filter: drop-shadow(0 0 3px #E31D42);
 }
 main .info-down {
   visibility: visible;

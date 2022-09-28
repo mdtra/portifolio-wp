@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 main .section-tools {
-  padding: 50px 0 70px 0;
+  padding: 50px 0 140px 0;
   max-width: 73%;
   margin: auto;
   text-align: center;
@@ -12,7 +12,7 @@ main .section-tools h2 {
 }
 main .section-tools .wrap-tools {
   visibility: hidden;
-  margin: 50px 0 50px 0;
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,10 @@ main .section-tools .tools-down {
 
 @media (max-width: 1250px) {
   main .section-tools {
-    padding: 40px 0;
+    padding: 40px 0 80px 0;
+  }
+  main .section-tools .wrap-tools {
+    margin: 20px 0 0 0;
   }
   main .section-tools .wrap-tools div {
     width: 80px;
@@ -74,6 +77,7 @@ main .section-tools .tools-down {
 }
 @media (max-width: 750px) {
   main .section-tools .wrap-tools {
+    margin: 50px 0 0 0;
     display: grid;
     grid-template-areas: "a b c" "d e f";
     grid-template-columns: 1fr 1fr 1fr;
