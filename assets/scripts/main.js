@@ -50,6 +50,11 @@ document.addEventListener('scroll', () => {
         }
 
     } else {
+
+        if(infoCord.top <= fimTela + 50) {
+            info.classList.add('info-down')
+        }
+
         if(toolCord.top <= fimTela) {
             tools.classList.add('tools-down')
         }
