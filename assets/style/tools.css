@@ -18,8 +18,8 @@ main .section-tools .wrap-tools {
   align-items: center;
 }
 main .section-tools .wrap-tools div {
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
   transition: 0.3s;
 }
 main .section-tools .wrap-tools div img {
